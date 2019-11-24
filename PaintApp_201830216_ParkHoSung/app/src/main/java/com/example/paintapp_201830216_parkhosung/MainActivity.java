@@ -183,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),items[pos], Toast.LENGTH_SHORT).show();
                         paintColor = colorList_body[pos]; //색상 설정
                     }
-                });|
+                });
 
                 AlertDialog alertDialog = builder.create();
                 alertDialog.show();

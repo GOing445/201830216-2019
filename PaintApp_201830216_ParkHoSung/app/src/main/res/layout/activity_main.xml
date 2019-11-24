@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/btn_line"
+                    style="@android:style/Widget.DeviceDefault.Light.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="선" />
+
+                <Button
+                    android:id="@+id/btn_circle"
+                    style="@android:style/Widget.DeviceDefault.Light.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="원" />
+
+                <Button
+                    android:id="@+id/btn_point"
+                    style="@android:style/Widget.DeviceDefault.Light.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="점" />
+
+                <Button
+                    android:id="@+id/btn_box"
+                    style="@android:style/Widget.DeviceDefault.Light.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="박스" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/btn_save"
+                    style="@android:style/Widget.DeviceDefault.Light.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="저장" />
+
+                <Button
+                    android:id="@+id/btn_color"
+                    style="@android:style/Widget.DeviceDefault.Light.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="색상" />
+
+                <Button
+                    android:id="@+id/btn_strock"
+                    style="@android:style/Widget.DeviceDefault.Light.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="굵기" />
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    style="@android:style/Widget.DeviceDefault.Light.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="초기화" />
+
+            </TableRow>
+        </TableLayout>
+
+        <view
+            android:id="@+id/canvas"
+            class="com.example.paintapp_201830216_parkhosung.MainActivity$MyGraphicView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

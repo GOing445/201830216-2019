@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='PaintApp_201830216_ParkHoSung'
